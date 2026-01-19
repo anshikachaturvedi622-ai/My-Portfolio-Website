@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Anshika</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            color: blue for the heading and black for the text;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 28px;
+        }
+        nav {
+            background-color: black;
+            padding: 14px 18px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            gap: 28px;
+            flex-wrap: wrap;
+            box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+        }
+        nav a {
+            margin: 0;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: color 0.2s, transform 0.15s;
+            border-radius: 4px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 28px auto;
+        }
+
+        .about-card {
+            display: grid;
+            grid-template-columns: 360px 1fr;
+            gap: 28px;
+            padding: 28px;
+            border-radius: 14px;
+            align-items: center;
+        }
+
+        .profile {
+            text-align: center;
+        }
+        .profile img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 14px;
+            box-shadow: 0 18px 40px rgba(13,38,76,0.08);
+            transition: transform 0.45s, box-shadow 0.45s;
+        }
+        
+        @media (max-width: 768px) {
+            .about-card {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 20px;
+            }
+            .profile img {
+                width: 180px;
+                height: 180px;
+            }
+            .container {
+                margin: 20px auto;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 12px;
+            }
+            nav {
+                gap: 12px;
+                padding: 10px;
+                flex-direction: column;
+            }
+            nav a {
+                width: 100%;
+                text-align: center;
+                padding: 8px 10px;
+            }
+            .about-card {
+                padding: 15px;
+            }
+            .profile img {
+                width: 150px;
+                height: 150px;
+            }
+            .container {
+                margin: 15px auto;
+                max-width: 100%;
+            }
+        }
+        
+        </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="about-card">
+            <div class="profile">
+                <img src="my.jpg" alt="Profile">
+                <h2>Anshika Chaturvedi</h2> 
+                <div class="role">B.Tech CSE(AI & ML) Student at Shri Vaishnav Vidyapeeth Vishwavidhyalaya, Indore.</div>
+            </div>
+            <div class="about-content">
+                <h1 style="color:black;">About Me</h1>
+                <p class="lead">I'm pursuing B.Tech Computer Science and Engineering specializing in Artificial Intelligence and Machine Learning through a collaborative program with Microsoft at Shri Vaishnav Vidyapeeth Vishwavidhyalaya, Indore.</p> <p class="lead"></p>I am currently building a strong foundation in programming, data structures, and AI concepts while exploring practical applications of machine learning. As a beginner, I enjoy learning new technologies and working on small projects that help me improve my problem-solving and technical skills.
+I am motivated, curious, and continuously working on developing my skills to prepare for future opportunities in the tech industry.</p>
+                                            <div class="hobbies">
+                    <div class="hobbies-item">
+                        <h4>Hobbies</h4>
+                        <p>Reading books</p> 
+                        <p>Dancing</p> 
+                        <p>Travelling</p>
+                        <p>Exploring new technologies</p>
+                    </div>
+                                    </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        nav {
+            background-color: black;
+            padding: 14px;
+            border-radius: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            margin: 0;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: background-color 0.25s, color 0.25s, transform 0.15s;
+            border-radius: 4px;
+        }
+        nav a:hover {
+            color: #ffd900;
+            background-color: rgba(255,255,255,0.06);
+            transform: translateY(-2px);
+        }
+        h1 {
+            color: black;
+        }
+        
+        .timeline {
+            margin-top: 18px;
+            display: grid;
+            gap: 18px;
+        }
+        .event { display: flex; gap: 18px; align-items: flex-start; }
+        .event-year {
+            background: #001f7a;
+            color: white;
+            font-weight: 700;
+            padding: 12px 14px;
+            border-radius: 8px;
+            min-width: 120px;
+            text-align: center;
+        }
+        .event-body h3 { margin: 0 0 6px 0; }
+        .certs { display:flex; gap:12px; flex-wrap:wrap; margin-top:10px; }
+        .cert { background:#fff; padding:10px 12px; border-radius:8px; box-shadow:0 6px 18px rgba(2,6,23,0.06); }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            nav {
+                gap: 15px;
+                padding: 10px;
+            }
+            .event {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .event-year {
+                min-width: 100%;
+                text-align: left;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            nav {
+                flex-direction: column;
+                gap: 8px;
+                padding: 8px;
+            }
+            nav a {
+                width: 100%;
+                text-align: center;
+                padding: 8px 10px;
+            }
+            main {
+                padding: 0 10px;
+            }
+            .timeline {
+                gap: 12px;
+            }
+            .event {
+                gap: 10px;
+            }
+            .event-year {
+                padding: 8px 10px;
+                min-width: 70px;
+                font-size: 0.85rem;
+            }
+            .event-body h3 {
+                font-size: 1rem;
+            }
+            .certs {
+                flex-direction: column;
+            }
+            .cert {
+                padding: 8px 10px;
+                font-size: 0.9rem;
+            }
+        }
+        
+    </style>
+
+</head>
+<body>
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main style="max-width:1100px;margin:28px auto;padding:0 18px;">
+        <h1>Education</h1>
+        <p style="color:#40545b;">Here is a summary of my academic journey and relevant certifications.</p>
+
+        <div class="timeline">
+            <div class="event">
+                <div class="event-year">2025 - Present</div>
+                <div class="event-body">
+                    <h3>B.Tech — Computer Science and Engineering (AI & ML)</h3>
+                    <p>Currently pursuing B.Tech with a focus on AI and Machine Learning. Coursework includes Data Structures, Algorithms, ML, and AI fundamentals.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-year">2024 - 2025</div>
+                <div class="event-body">
+                    <h3>Senior Secondary (12th)</h3>
+                    <p>Completed 12th grade with Science stream (Physics, Chemistry, Mathematics) scoring 89.4%(CBSE) at Shri Mahaveer Senior Secondary School, Alot.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-year">2022 - 2023</div>
+                <div class="event-body">
+                    <h3>Higher Secondary (10th)</h3>
+                    <p>Completed 10th grade scoring 87.6%(CBSE) at Shri Mahaveer Senior Secondary School, Alot.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="margin-top:18px;">Certifications</h2>
+        <div class="certs">
+            <div class="cert">Microsoft Learn - AI Fundamentals (in progress)</div>
+            <div class="cert">Coursera - Python for Everybody</div>
+        </div>
+
+    </main>
+</body>
+</html>

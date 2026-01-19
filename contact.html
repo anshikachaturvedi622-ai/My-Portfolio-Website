@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Portfolio</title>
+        <style>
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        nav {
+            background-color: black;
+            padding: 14px;
+            border-radius: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            margin: 0;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: background-color 0.25s, color 0.25s, transform 0.15s;
+            border-radius: 4px;
+        }
+        nav a:hover {
+            color: #ffd900;
+            background-color: rgba(255,255,255,0.06);
+            transform: translateY(-2px);
+        }
+        h1 {
+            color: black;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 28px auto;
+            padding: 20px;
+        }
+        .contact-card {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(20,20,30,0.06);
+        }
+        .contact-list { list-style:none; padding:0; margin:0; }
+        .contact-item { display:flex; justify-content:space-between; padding:10px 0; border-bottom:1px solid #f0f0f0; }
+        .contact-item:last-child { border-bottom: none; }
+        .contact-link { color:#1a73e8; text-decoration:none; font-weight:600; }
+        .note { color:#555; margin-top:12px; }
+        .footer { text-align:center; padding:18px 10px; color:#666; font-size:0.95rem; }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            nav {
+                gap: 15px;
+            }
+            .container {
+                margin: 20px auto;
+            }
+            .contact-item {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            nav {
+                flex-direction: column;
+                gap: 8px;
+                padding: 8px;
+            }
+            nav a {
+                width: 100%;
+                text-align: center;
+                padding: 8px 10px;
+                font-size: 0.9rem;
+            }
+            .container {
+                padding: 10px;
+                margin: 15px auto;
+                max-width: 100%;
+            }
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            .lead {
+                font-size: 0.95rem;
+            }
+            .contact-card {
+                padding: 12px;
+            }
+            .contact-item {
+                padding: 8px 0;
+                flex-direction: column;
+            }
+            .contact-link {
+                word-break: break-all;
+            }
+        }
+        
+    </style>
+
+</head>
+<body>
+                <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Contact</h1>
+            <p class="lead">Feel free to reach out to me through any of the following channels:</p>
+        <section class="contact-card">
+            <ul class="contact-list">
+                
+                        <li class="contact-item"><span>Email</span><a class="anshikachaturvedi622@gmail.com" href="mailto:anshikachaturvedi622@gmail.com">anshikachaturvedi@gmail.com</a></li>
+                <li class="contact-item"><span>Instagram</span><a class="contact-link" href="https://instagram.com/anshika_chatur_vedi" target="_blank">@anshika_chatur_vedi</a></li>
+                <li class="contact-item"><span>LinkedIn</span><a class="contact-link" href="https://www.linkedin.com/in/anshika-chaturvedi-b5a3593a5" target="_blank">linkedin.com/in/anshika-chaturvedi-b5a3593a5</a></li>
+                <li class="contact-item"><span>GitHub</span><a class="contact-link" href="https://github.com/anshikachaturvedi622-ai" target="_blank">github.com/anshikachaturvedi622-ai</a></li>
+            </ul>
+                    </section>
+
+    </main>
+
+    <footer class="footer">Back to <a href="index.html">Home</a></footer>
+</body>
+</html>
